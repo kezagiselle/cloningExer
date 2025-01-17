@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Website</title>
+    <style>
+        /* Prevent horizontal scrolling */
+        .hidden-overflow {
+            overflow-x: hidden;
+        }
+
+        /* Default div style */
+        .div-style {
+            display: block;
+            unicode-bidi: isolate;
+        }
+
+        /* Fullscreen iframe */
+        .fullscreen-iframe {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
-<body>
-    <div id="live-view">
-        <iframe style="display: block; position: absolute; width: 100%; height: 100%;" width="100%" height="100%" frameborder="0" src="https://templatemo.com/templates/templatemo_589_lugx_gaming"></iframe>
+<body class="hidden-overflow">
+    <div id="live-view" class="div-style">
+        <iframe class="fullscreen-iframe" width="100%" height="100%" frameborder="0" src="https://templatemo.com/templates/templatemo_589_lugx_gaming"></iframe>
     </div>
-    <div id="js-preloader" class="js-preloader loaded">
+    <div id="js-preloader" class="js-preloader loaded div-style">
         <div class="preloader-inner">
           <span class="dot"></span>
           <div class="dots">
@@ -20,7 +39,7 @@
           </div>
         </div>
       </div>
-      <header class="header-area header-sticky">
+      <header class="header-area header-sticky div-style">
         <div class="container">
             <div class="row">
                 <div class="col-12">
